@@ -9,7 +9,7 @@ Spec fields (JSON):
   company       lead company as it reads in text (required)
   first_name, last_name   cover: "Prepared for <first> <last>, <company>"
   sender        optional, default "Mykolas Belickas": the LinkedIn account that sent the message. Its first name picks
-                the last-slide photo (PHOTOS: mykolas.jpg, augustas.jpg in assets/img). Mykolas Belickas leads: sender default. Augustas Labanauskas leads: "sender": "Augustas Labanauskas" (augustas.jpg still to add).
+                the last-slide photo (PHOTOS: mykolas.jpg, augustas.jpg in assets/img). Mykolas Belickas leads: sender default. Augustas Labanauskas leads: "sender": "Augustas Labanauskas".
   shot          cover screenshot in assets/shots/, made by tools/shot.py (py tools/shot.py <slug> ../assets/shots https://<domain>);
                 no shot = verdict card
   domain        optional, the lead's site (only needed for tools/logo.py)
