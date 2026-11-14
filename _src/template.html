@@ -80,7 +80,8 @@ p{margin:0}
 .gl{display:flex;flex-direction:column;gap:.8cqw;font-size:1.3cqw;line-height:1.45;color:#e8e3d8;border-left:.4cqw solid var(--hi);padding-left:1.4cqw;max-width:52cqw}
 .cases{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4cqw}
 .proofs .pl{margin-top:.8cqw;font-size:1.6cqw;line-height:1.45;color:#e8e3d8;max-width:70ch}html.sphone .proofs .pl{font-size:14px;margin-top:8px}
-.acs{padding-right:40cqw}.acs .stats,.acs .cases{grid-template-columns:repeat(2,1fr)}
+.acs{padding-right:40cqw}.acs .stats{grid-template-columns:repeat(2,1fr)}.acs .res{margin-top:2.4cqw}.acs .who{display:flex;align-items:baseline;gap:1.2cqw}.acs .who b{font:700 1.9cqw var(--display);color:var(--cream,#f4f1ea)}.acs .who span{font:500 1.05cqw var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.acs .res .st b{font-size:4.4cqw}
+html.sphone .acs .res{margin-top:18px}html.sphone .acs .who{flex-direction:column;gap:2px}html.sphone .acs .who b{font-size:20px}html.sphone .acs .who span{font-size:10px}html.sphone .acs .res .st b{font-size:30px}
 .acs .call{position:absolute;right:5cqw;top:50%;transform:translateY(-50%);width:33cqw;margin:0}.acs .call img{display:block;width:100%;height:auto}
 html.sphone .acs{padding-right:18px}html.sphone .acs .stats,html.sphone .acs .cases{grid-template-columns:1fr 1fr}html.sphone .acs .call{position:static;transform:none;width:100%;margin-top:16px}
 .case{display:flex;flex-direction:column;gap:.5cqw;background:var(--tile);padding:1.3cqw 1.4cqw 1.4cqw;border-top:.25cqw solid var(--hi)}
@@ -284,35 +285,18 @@ html.sphone .brandmk{font-size:24px}html.sphone .talk .brandmk{font-size:20px}
       <p class="how"><span class="lb">If it brings nothing</span>{{O_MISS}}</p>
     </div>
   </div>
-  <button class="nx" type="button">What it did for Stickytales<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M5 13l7 7 7-7"/></svg></button>
+  <button class="nx" type="button">What it did for our clients<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M5 13l7 7 7-7"/></svg></button>
 </div></section>
 
-<section aria-label="Proof"><div class="s proofs">
+<section aria-label="Results"><div class="s proofs acs">
   <h2 class="in">{{PROOF_HEAD}}</h2>
-  <div class="stats in">
-    <div class="st"><b>$80k+</b><span>extra revenue at Stickytales in the last quarter</span></div>
-    <div class="st"><b>40%</b><span>lower client churn in 3 months, or your money back</span></div>
-    <div class="st"><b>90 days</b><span>of each account's own history behind every verdict</span></div>
-    <div class="st"><b>3 steps</b><span>to live: workspace, ad account, invite</span></div>
+  <div class="res in">
+    <div class="who"><b>Stickytales</b><span>last quarter</span></div>
+    <div class="stats"><div class="st"><b>$80k+</b><span>extra revenue</span></div><div class="st"><b>40%</b><span>lower client churn in 3 months</span></div></div>
   </div>
-  <div class="cases in" style="margin-top:1.6cqw">
-    <div class="case"><span class="yr">Stickytales · last quarter</span><b>$80k+ kept</b><p>Revenue from clients they already had: fewer clients leaving, more of them buying more, solely through the delivery ecosystem.</p></div>
-    <div class="case"><span class="yr">Branded client workspace</span><b>Your logo</b><p>Each client sees their ads, spend, clicks, CPM and ROAS in one read-only dashboard with your agency's name on it. Your team keeps control.</p></div>
-    <div class="case"><span class="yr">Daily verdicts</span><b>Scale · Hold · Kill</b><p>New Meta ads judged every morning against the account's own 90-day median, with the evidence and the next step. Proof of work, every day.</p></div>
-  </div>
-  <button class="nx" type="button">What it did for ActiScale<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M5 13l7 7 7-7"/></svg></button>
-</div></section>
-
-<section aria-label="Proof ActiScale"><div class="s proofs acs">
-  <h2 class="in">What it did for ActiScale.</h2>
-  <p class="pl in">ActiScale is a full stack lead generation agency. We gave every one of its clients a daily view of the work.</p>
-  <div class="stats in">
-    <div class="st"><b>$70k+</b><span>extra revenue in the last quarter</span></div>
-    <div class="st"><b>32%</b><span>lower client churn in 3 months</span></div>
-  </div>
-  <div class="cases in" style="margin-top:1.6cqw">
-    <div class="case"><span class="yr">What we plugged in</span><b>Their workspace</b><p>A branded AdVerdict workspace for every ActiScale client, with a Scale, Hold or Kill verdict each morning.</p></div>
-    <div class="case"><span class="yr">The result</span><b>$70k+ kept</b><p>Clients saw the work, stayed longer and bought more.</p></div>
+  <div class="res in">
+    <div class="who"><b>ActiScale</b><span>full stack lead generation agency, last quarter</span></div>
+    <div class="stats"><div class="st"><b>$70k+</b><span>extra revenue</span></div><div class="st"><b>32%</b><span>lower client churn in 3 months</span></div></div>
   </div>
   <figure class="call"><img src="../assets/img/actiscale_call.jpg" alt="ActiScale on a call with AdVerdict"></figure>
   <button class="nx" type="button">Let's talk about {{COMPANY}}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M5 13l7 7 7-7"/></svg></button>
