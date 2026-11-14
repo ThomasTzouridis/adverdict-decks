@@ -80,6 +80,8 @@ p{margin:0}
 .gl{display:flex;flex-direction:column;gap:.8cqw;font-size:1.3cqw;line-height:1.45;color:#e8e3d8;border-left:.4cqw solid var(--hi);padding-left:1.4cqw;max-width:52cqw}
 .cases{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4cqw}
 .proofs .pl{margin-top:.8cqw;font-size:1.6cqw;line-height:1.45;color:#e8e3d8;max-width:70ch}html.sphone .proofs .pl{font-size:14px;margin-top:8px}
+.cases.tst{grid-template-columns:1.35fr 1fr 1fr}.call{margin:0;display:flex;flex-direction:column;background:var(--tile);border-top:.25cqw solid var(--hi)}.call img{display:block;width:100%;aspect-ratio:1158/536;object-fit:cover}.call figcaption{font:500 .95cqw var(--mono);color:var(--muted);padding:.7cqw 1cqw}
+html.sphone .cases.tst{grid-template-columns:1fr 1fr}html.sphone .call{grid-column:1/-1;border-top-width:2px}html.sphone .call figcaption{font-size:10px;padding:6px 8px}
 .case{display:flex;flex-direction:column;gap:.5cqw;background:var(--tile);padding:1.3cqw 1.4cqw 1.4cqw;border-top:.25cqw solid var(--hi)}
 .case .yr{font:600 .9cqw var(--mono);color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
 .case b{font:800 2.3cqw/1 var(--mono);color:#fff;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
@@ -302,15 +304,15 @@ html.sphone .brandmk{font-size:24px}html.sphone .talk .brandmk{font-size:20px}
 
 <section aria-label="Proof ActiScale"><div class="s proofs">
   <h2 class="in">What it did for ActiScale.</h2>
-  <p class="pl in">ActiScale is a full stack lead generation agency: targeting, outreach, follow up and booked meetings, all done for its clients.</p>
+  <p class="pl in">ActiScale is a full stack lead generation agency: targeting, outreach, follow up and booked meetings, all done for its clients. That work is invisible between calls, so some clients left before the results showed.</p>
   <div class="stats in">
     <div class="st"><b>$70k+</b><span>extra revenue at ActiScale in the last quarter</span></div>
     <div class="st"><b>32%</b><span>lower client churn at ActiScale in 3 months</span></div>
     <div class="st"><b>1 place</b><span>each client's ads, spend and ROAS, under ActiScale's name</span></div>
     <div class="st"><b>Daily</b><span>verdicts on every client's ads, with the evidence</span></div>
   </div>
-  <div class="cases in" style="margin-top:1.6cqw">
-    <div class="case"><span class="yr">The problem</span><b>Invisible work</b><p>Lead gen work happens behind the scenes. Between calls, clients could not see what ActiScale did for them, so some left before the results showed.</p></div>
+  <div class="cases tst in" style="margin-top:1.6cqw">
+    <figure class="call"><img src="../assets/img/actiscale_call.jpg" alt="Call between ActiScale and AdVerdict"><figcaption>Thomas Tzouridis, ActiScale, on a call with the AdVerdict team</figcaption></figure>
     <div class="case"><span class="yr">What we plugged in</span><b>Their workspace</b><p>Every ActiScale client got a branded AdVerdict workspace: ads, spend and ROAS in one place, a Scale, Hold or Kill verdict each morning, and our team acting on it.</p></div>
     <div class="case"><span class="yr">ActiScale · last quarter</span><b>$70k+ kept</b><p>Clients saw the work every day, stayed longer and bought more. 32% fewer clients left, solely through the delivery ecosystem.</p></div>
   </div>
