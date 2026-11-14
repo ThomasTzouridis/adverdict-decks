@@ -13,4 +13,4 @@ Only the lead slots change: company, first and last name, optional logo, sender.
 4. `py build.py specs/<slug>.json` -> `../<slug>/index.html`
 
 ## Hosting
-Not online yet: no GitHub repo, no domain, no tracking beacon. Local git only until Thomas decides.
+Repo `ThomasTzouridis/adverdict-decks` (public), GitHub Pages on `main` /, live since 2026-11-14 at `https://thomastzouridis.github.io/adverdict-decks/<slug>/`. Push = live in about a minute. No custom domain and no tracking beacon yet.
