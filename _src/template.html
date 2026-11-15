@@ -80,10 +80,10 @@ p{margin:0}
 .gl{display:flex;flex-direction:column;gap:.8cqw;font-size:1.3cqw;line-height:1.45;color:#e8e3d8;border-left:.4cqw solid var(--hi);padding-left:1.4cqw;max-width:52cqw}
 .cases{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4cqw}
 .proofs .pl{margin-top:.8cqw;font-size:1.6cqw;line-height:1.45;color:#e8e3d8;max-width:70ch}html.sphone .proofs .pl{font-size:14px;margin-top:8px}
-.acs{padding-right:40cqw}.acs .stats{grid-template-columns:repeat(2,1fr)}.acs .res{margin-top:2.4cqw}.acs .who{display:flex;align-items:baseline;gap:1.2cqw}.acs .who b{font:700 1.9cqw var(--display);color:var(--cream,#f4f1ea)}.acs .who span{font:500 1.05cqw var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.acs .res .st b{font-size:4.4cqw}
+.acs .duo{display:grid;grid-template-columns:1fr 1fr;margin-top:2.4cqw;align-items:start}.acs .duo>.res{margin-top:0;padding-right:4cqw}.acs .duo .who{flex-direction:column;align-items:flex-start;gap:.5cqw}.acs .duo>.res+.res{padding:0 0 0 4cqw;border-left:.12cqw solid var(--line)}.acs .stats{grid-template-columns:repeat(2,1fr)}.acs .res{margin-top:2.4cqw}.acs .who{display:flex;align-items:baseline;gap:1.2cqw}.acs .who b{font:700 1.9cqw var(--display);color:var(--cream,#f4f1ea)}.acs .who span{font:500 1.05cqw var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.acs .res .st b{font-size:4.4cqw}
 html.sphone .acs .res{margin-top:18px}html.sphone .acs .who{flex-direction:column;gap:2px}html.sphone .acs .who b{font-size:20px}html.sphone .acs .who span{font-size:10px}html.sphone .acs .res .st b{font-size:30px}
-.acs .call{position:absolute;right:5cqw;top:50%;transform:translateY(-50%);width:33cqw;margin:0}.acs .call img{display:block;width:100%;height:auto}
-html.sphone .acs{padding-right:18px}html.sphone .acs .stats,html.sphone .acs .cases{grid-template-columns:1fr 1fr}html.sphone .acs .call{position:static;transform:none;width:100%;margin-top:16px}
+.acs .call{margin:2cqw 0 0;width:100%}.acs .call img{display:block;width:100%;height:auto}
+html.sphone .acs .duo{grid-template-columns:1fr;margin-top:6px}html.sphone .acs .duo>.res{padding:0}html.sphone .acs .duo>.res+.res{padding:18px 0 0;margin-top:18px;border-left:0;border-top:1px solid var(--line)}html.sphone .acs .stats,html.sphone .acs .cases{grid-template-columns:1fr 1fr}html.sphone .acs .call{margin-top:14px}
 .case{display:flex;flex-direction:column;gap:.5cqw;background:var(--tile);padding:1.3cqw 1.4cqw 1.4cqw;border-top:.25cqw solid var(--hi)}
 .case .yr{font:600 .9cqw var(--mono);color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
 .case b{font:800 2.3cqw/1 var(--mono);color:#fff;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
@@ -290,15 +290,17 @@ html.sphone .brandmk{font-size:24px}html.sphone .talk .brandmk{font-size:20px}
 
 <section aria-label="Results"><div class="s proofs acs">
   <h2 class="in">{{PROOF_HEAD}}</h2>
-  <div class="res in">
+  <div class="duo">
+    <div class="res in">
     <div class="who"><b>Stickytales</b><span>last quarter</span></div>
     <div class="stats"><div class="st"><b>$80k+</b><span>extra revenue</span></div><div class="st"><b>40%</b><span>lower client churn in 3 months</span></div></div>
   </div>
-  <div class="res in">
+    <div class="res in">
     <div class="who"><b>ActiScale</b><span>full stack lead generation agency, last quarter</span></div>
     <div class="stats"><div class="st"><b>$70k+</b><span>extra revenue</span></div><div class="st"><b>32%</b><span>lower client churn in 3 months</span></div></div>
+  
+    <figure class="call"><img src="../assets/img/actiscale_call.jpg" alt="ActiScale on a call with AdVerdict"></figure></div>
   </div>
-  <figure class="call"><img src="../assets/img/actiscale_call.jpg" alt="ActiScale on a call with AdVerdict"></figure>
   <button class="nx" type="button">Let's talk about {{COMPANY}}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M5 13l7 7 7-7"/></svg></button>
 </div></section>
 
