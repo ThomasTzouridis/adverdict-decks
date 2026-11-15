@@ -13,4 +13,4 @@ Only the lead slots change: company, first and last name, optional logo, sender.
 4. `py build.py specs/<slug>.json` -> `../<slug>/index.html`
 
 ## Hosting
-Repo `ThomasTzouridis/adverdict-decks` (public), GitHub Pages on `main` /, live since 2026-11-14 at `https://thomastzouridis.github.io/adverdict-decks/<slug>/`. Push = live in about a minute. No custom domain and no tracking beacon yet.
+Repo `ThomasTzouridis/adverdict-decks` (public), GitHub Pages on `main` /, custom domain `adverdict-cases.com` (bought 2026-11-15 on Spaceship account ACTISCALE, auto-renew on, basic DNS: 4 GitHub A records + `www` CNAME to thomastzouridis.github.io). Deck URL: `https://adverdict-cases.com/<slug>/`. Push = live in about a minute. No tracking beacon yet.
