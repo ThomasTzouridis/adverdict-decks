@@ -18,7 +18,7 @@ Spec fields (JSON):
                 No logo = company name in text.
   logo_badge    true = logo on a white badge
   cover_line    optional, default "30% more revenue for <company>, here is how."
-  proof_head    optional, default "What it did for our clients."
+  proof_head    optional, default "What it did for Stickytales."
   booking_url   optional, default Mykolas's Calendly
 """
 import json, sys, os, html
@@ -66,7 +66,7 @@ for path in sys.argv[1:]:
     out = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
     for k, v in {'COMPANY': co, 'PREPARED': prep, 'CO_MARK': mark,
                  'COVER_LINE': e(sp.get('cover_line') or f"30% more revenue for {sp['company']}, here is how."),
-                 'PROOF_HEAD': e(sp.get('proof_head') or "What it did for our clients."),
+                 'PROOF_HEAD': e(sp.get('proof_head') or "What it did for Stickytales."),
                  'O_HEAD': O_HEAD.format(co=co), 'O_TARGET': O_TARGET.format(co=co), 'O_COND': O_COND.format(co=co), 'O_MISS': O_MISS.format(co=co),
                  'SENDER': e(sender), 'SENDER_PHOTO': photo, 'COVER_VISUAL': vis, 'BOOKING_URL': sp.get('booking_url') or BOOK}.items():
         out = out.replace('{{' + k + '}}', v)
