@@ -45,6 +45,11 @@ def cap(s):
     return s[:1].upper() + s[1:] if s and s == s.lower() else s
 
 
+def name(s):
+    # all-lowercase person names (twinkle vyas) get each word capitalized; any other casing stays as written
+    return ' '.join(w[:1].upper() + w[1:] for w in s.split(' ')) if s == s.lower() else s
+
+
 def pull():
     key = env()['HEYREACH_ADVERDICT_API_KEY']
     def post(p, b):
@@ -142,7 +147,7 @@ def build_all():
         p = os.path.join(SRC, 'specs', s + '.json')
         # hand-made specs (no "auto") are never touched; auto specs are rewritten so a later shot or name fix lands
         if not os.path.exists(p) or json.load(open(p, encoding='utf-8')).get('auto'):
-            sp = {'slug': s, 'company': l['company'], 'first_name': l['first_name'], 'last_name': l['last_name'], 'sender': l['sender'], 'auto': True}
+            sp = {'slug': s, 'company': l['company'], 'first_name': name(l['first_name']), 'last_name': name(l['last_name']), 'sender': l['sender'], 'auto': True}
             k = dkey(l['domain']) if l['domain'] else ''
             if k and k not in bad and os.path.exists(os.path.join(SHOTS, k + '.jpg')):
                 sp.update(domain=l['domain'], shot=k + '.jpg')
